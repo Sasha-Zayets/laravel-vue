@@ -3,11 +3,14 @@ import App from './components/Default'
 
 import Product from './components/Product'
 
-new Vue({
-    render: h => h(App)
-}).$mount('#app')
+if (document.getElementById('app')) {
+    new Vue({
+        render: h => h(App)
+    }).$mount('#app')
+}
 
-
-new Vue({
-    render: h => h(Product)
-}).$mount('#product')
+if (document.getElementById('product')) {
+    new Vue({
+        render: h => h(Product)
+    }).$mount('#product')
+}

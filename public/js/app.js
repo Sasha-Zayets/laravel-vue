@@ -14586,16 +14586,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
-  render: function render(h) {
-    return h(_components_Default__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  }
-}).$mount('#app');
-new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
-  render: function render(h) {
-    return h(_components_Product__WEBPACK_IMPORTED_MODULE_2__["default"]);
-  }
-}).$mount('#product');
+
+if (document.getElementById('app')) {
+  new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+    render: function render(h) {
+      return h(_components_Default__WEBPACK_IMPORTED_MODULE_1__["default"]);
+    }
+  }).$mount('#app');
+}
+
+if (document.getElementById('product')) {
+  new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+    render: function render(h) {
+      return h(_components_Product__WEBPACK_IMPORTED_MODULE_2__["default"]);
+    }
+  }).$mount('#product');
+}
 
 /***/ }),
 

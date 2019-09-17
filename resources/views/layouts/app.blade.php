@@ -8,7 +8,7 @@
     @show
 
 </head>
-<body id="app">
+<body>
     @include('components.header')
 
     @yield('content')
