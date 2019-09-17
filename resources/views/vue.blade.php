@@ -4,16 +4,11 @@
 @endsection
 
 @section('content')
-    <main>
-        <div id="app"></div>
-    </main>
+    <component-list></component-list>
 @endsection
 
 @section('scripts')
-<script src="/js/app.js"></script>
 <script>
-   
+
 </script>
-
-
 @endsection

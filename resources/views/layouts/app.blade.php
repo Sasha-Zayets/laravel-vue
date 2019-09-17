@@ -6,15 +6,20 @@
 
     @section('css')
     @show
-
 </head>
 <body>
     @include('components.header')
 
-    @yield('content')
+    <div id="app">
+        @yield('content')
+    </div>
 
     @include('components.footer')
     @section('scripts')
+
     @show
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
+
 </html>

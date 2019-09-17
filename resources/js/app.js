@@ -3,14 +3,13 @@ import App from './components/Default'
 
 import Product from './components/Product'
 
-if (document.getElementById('app')) {
-    new Vue({
-        render: h => h(App)
-    }).$mount('#app')
-}
+window.Vue = require('vue');
 
-if (document.getElementById('product')) {
-    new Vue({
-        render: h => h(Product)
-    }).$mount('#product')
-}
+
+Vue.component('component-product', require('./components/Product.vue').default);
+Vue.component('component-list', require('./components/List.vue').default);
+
+
+const app = new Vue({
+    el: '#app'
+});

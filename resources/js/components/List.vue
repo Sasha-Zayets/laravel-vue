@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="(user, index) in users" 
+            <li v-for="(user, index) in users"
                 :key="index">
                 {{user.name}}
                 </li>
@@ -26,5 +26,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+
 </style>

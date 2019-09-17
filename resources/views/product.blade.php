@@ -5,15 +5,20 @@
 
 @section('content')
     <main>
-        <div id="product"></div>
+        <ul>
+            <li>2</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
     </main>
+
 @endsection
 
 @section('scripts')
-<script src="/js/app.js"></script>
 <script>
-   
+    import Vue from 'vue'
+    Vue.component('component-list', require('./components/List.vue').default);
 </script>
-
 
 @endsection
