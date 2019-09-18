@@ -15,8 +15,14 @@ class TestController extends Controller
     public function index()
     {
         $list = [
-            'this' => 2,
-            'that' => 1
+            0 => [ 
+                'name' => 'Toyota',
+                'price' => 150,
+            ],
+            1 => [ 
+                'name' => 'Audi',
+                'price' => 200,
+            ],
         ];
 
 

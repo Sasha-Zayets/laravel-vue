@@ -1881,9 +1881,11 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('https://jsonplaceholder.typicode.com/users').then(function (_ref) {
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/list').then(function (_ref) {
       var data = _ref.data;
-      _this.users = data;
+      _this.users = {
+        data: data
+      }.data;
     });
   },
   data: function data() {
@@ -14586,22 +14588,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-if (document.getElementById('app')) {
-  new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
-    render: function render(h) {
-      return h(_components_Default__WEBPACK_IMPORTED_MODULE_1__["default"]);
-    }
-  }).$mount('#app');
-}
-
-if (document.getElementById('product')) {
-  new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
-    render: function render(h) {
-      return h(_components_Product__WEBPACK_IMPORTED_MODULE_2__["default"]);
-    }
-  }).$mount('#product');
-}
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('component-product', _components_Default__WEBPACK_IMPORTED_MODULE_1__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('component-list', _components_Product__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+  el: '#app'
+});
 
 /***/ }),
 

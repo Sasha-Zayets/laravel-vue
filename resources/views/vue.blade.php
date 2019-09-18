@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <component-list></component-list>
+    <component-product></component-product>
 @endsection
 
 @section('scripts')

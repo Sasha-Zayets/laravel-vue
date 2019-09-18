@@ -14,9 +14,9 @@ import axios from 'axios'
 
 export default {
     created () {
-        axios.get('https://jsonplaceholder.typicode.com/users')
+        axios.get('/api/list')
             .then(({data}) => {
-                this.users = data
+                this.users = {data}.data
             })
     },
    data: () => ({

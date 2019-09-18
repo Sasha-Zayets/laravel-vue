@@ -3,13 +3,10 @@ import App from './components/Default'
 
 import Product from './components/Product'
 
-window.Vue = require('vue');
-
-
-Vue.component('component-product', require('./components/Product.vue').default);
-Vue.component('component-list', require('./components/List.vue').default);
+Vue.component('component-product', App)
+Vue.component('component-list', Product)
 
 
 const app = new Vue({
     el: '#app'
-});
+})
